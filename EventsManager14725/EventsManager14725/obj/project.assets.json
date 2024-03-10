@@ -1025,11 +1025,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Web App Dev Modul\\EventsManager\\EventsManager14725\\EventsManager14725\\EventsManager14725.csproj",
+      "projectUniqueName": "D:\\EventsManager\\EventsManager14725\\EventsManager14725\\EventsManager14725.csproj",
       "projectName": "EventsManager14725",
-      "projectPath": "D:\\Web App Dev Modul\\EventsManager\\EventsManager14725\\EventsManager14725\\EventsManager14725.csproj",
+      "projectPath": "D:\\EventsManager\\EventsManager14725\\EventsManager14725\\EventsManager14725.csproj",
       "packagesPath": "C:\\Users\\jolda\\.nuget\\packages\\",
-      "outputPath": "D:\\Web App Dev Modul\\EventsManager\\EventsManager14725\\EventsManager14725\\obj\\",
+      "outputPath": "D:\\EventsManager\\EventsManager14725\\EventsManager14725\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jolda\\AppData\\Roaming\\NuGet\\NuGet.Config",

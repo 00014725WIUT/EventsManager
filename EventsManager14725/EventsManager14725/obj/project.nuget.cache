@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PJVxT5zV4hNhgTHZb8eIQsZUhcevQNLR1zh+JQSlx4sCkO3wKqtDH+hPo9e8saajFO7iuaHgxTBq3+3xQnH82A==",
+  "dgSpecHash": "93MqDbVUK1Dqnqgk0B/JcYt5R9gJWLugWpUf4zon/Sk/zuRU/70j4dnuXpT+BGlymJhKhwtLBmbr4+YVNQMXTw==",
   "success": true,
-  "projectFilePath": "D:\\Web App Dev Modul\\EventsManager\\EventsManager14725\\EventsManager14725\\EventsManager14725.csproj",
+  "projectFilePath": "D:\\EventsManager\\EventsManager14725\\EventsManager14725\\EventsManager14725.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jolda\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
     "C:\\Users\\jolda\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0\\microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",
