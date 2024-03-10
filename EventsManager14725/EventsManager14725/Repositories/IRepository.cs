@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 
 namespace EventsManager14725.Repositories
 {
+    // WIUT STUDENT ID: 00014725
     public interface IRepository <T>
     {
         Task<IEnumerable<T>> GetAllAsync();

@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EventsManager14725.Repositories
 {
+    // WIUT STUDENT ID: 00014725
+
     public class UserRepository : IRepository<UserModel>
     {
         private readonly ApplicationDbContext _context;

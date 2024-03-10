@@ -6,6 +6,8 @@ using EventsManager14725.Models;
 
 namespace EventsManager14725.Repositories
 {
+    // WIUT STUDENT ID: 00014725
+
     public class EventRepository : IRepository<EventModel>
     {
         private readonly ApplicationDbContext _context;
