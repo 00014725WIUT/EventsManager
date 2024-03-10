@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EventsManager14725.props" />
+</Project>
