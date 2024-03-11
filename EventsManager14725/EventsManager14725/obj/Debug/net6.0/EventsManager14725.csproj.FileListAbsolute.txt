@@ -53,14 +53,8 @@ D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsof
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
-D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -70,7 +64,6 @@ D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsof
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.OpenApi.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -115,3 +108,6 @@ D:\EventsManager\EventsManager14725\EventsManager14725\obj\Debug\net6.0\refint\E
 D:\EventsManager\EventsManager14725\EventsManager14725\obj\Debug\net6.0\EventsManager14725.pdb
 D:\EventsManager\EventsManager14725\EventsManager14725\obj\Debug\net6.0\EventsManager14725.genruntimeconfig.cache
 D:\EventsManager\EventsManager14725\EventsManager14725\obj\Debug\net6.0\ref\EventsManager14725.dll
+D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Humanizer.dll
+D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\EventsManager\EventsManager14725\EventsManager14725\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll

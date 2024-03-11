@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen();
 // WIUT STUDENT ID: 00014725
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection")));
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IRepository<UserModel>, UserRepository>();
 builder.Services.AddScoped<IRepository<EventModel>, EventRepository>();

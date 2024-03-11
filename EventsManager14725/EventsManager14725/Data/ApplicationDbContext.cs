@@ -13,5 +13,12 @@ namespace EventsManager14725.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         public DbSet<EventModel> Events { get; set; }
         public DbSet<UserModel> Users { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<EventModel>()
+                .Property(e => e.Cost)
+                .HasColumnType("decimal(18,2)"); 
+        }
     }
 }

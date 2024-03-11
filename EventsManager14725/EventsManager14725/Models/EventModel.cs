@@ -7,7 +7,7 @@ namespace EventsManager14725.Models
     {
         // WIUT STUDENT ID: 00014725
 
-        [Required]
+        [Key]
         public int EventId { get; set; }
 
         [Required(ErrorMessage = "Event name is required !")]
