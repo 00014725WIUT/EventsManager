@@ -1,0 +1,26 @@
+<header>
+    <title>Delete Event</title>
+    <link rel="stylesheet" href="./delete.component.css">
+</header>
+
+<div class="container">
+    <h2>Delete Event</h2>
+    <p>Are you sure you want to delete this event?</p>
+  
+    
+    <div class="delete-box">
+        <p><strong>Event ID:</strong> {{ eventId }}</p>
+        <p><strong>Event Name:</strong> {{ eventName }}</p>
+        <p><strong>Event Date:</strong> {{ eventDate | date }}</p>
+        <p><strong>Location:</strong> {{ location }}</p>
+        <p><strong>Cost:</strong> {{ cost | currency:'USD':'symbol':'1.2-2' }}</p>
+        <p><strong>Language:</strong> {{ language }}</p>
+    </div>
+    
+  
+    <div>
+      <button class="delete" (click)="deleteEvent()">Delete Event</button>
+      <!-- <button class="cancel" (click)="cancel()">Cancel</button> -->
+    </div>
+</div>
+  
