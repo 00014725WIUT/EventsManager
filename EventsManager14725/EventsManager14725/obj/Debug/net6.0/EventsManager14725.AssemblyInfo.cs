@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventsManager14725")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecb395b2892758a1209267de2d312c13eefacc23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventsManager14725")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventsManager14725")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
