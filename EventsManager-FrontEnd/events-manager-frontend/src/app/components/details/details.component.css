@@ -1,0 +1,24 @@
+/* General styling for the component */
+.eventDetails {
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: 700px;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+.eventDetails li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+  
+  /* Style bold text for labels */
+  .eventDetails li b {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  

@@ -9,18 +9,18 @@
   
     
     <div class="delete-box">
-        <p><strong>Event ID:</strong> {{ eventId }}</p>
-        <p><strong>Event Name:</strong> {{ eventName }}</p>
-        <p><strong>Event Date:</strong> {{ eventDate | date }}</p>
-        <p><strong>Location:</strong> {{ location }}</p>
-        <p><strong>Cost:</strong> {{ cost | currency:'USD':'symbol':'1.2-2' }}</p>
-        <p><strong>Language:</strong> {{ language }}</p>
+        <p><strong>Event ID:</strong> {{ deleteEvent.eventID }}</p>
+        <p><strong>Event Name:</strong> {{ deleteEvent.eventName }}</p>
+        <p><strong>Event Date:</strong> {{ deleteEvent.eventDate| date }}</p>
+        <p><strong>Location:</strong> {{ deleteEvent.location }}</p>
+        <p><strong>Cost:</strong> {{ deleteEvent.cost| currency:'USD':'symbol':'1.2-2' }}</p>
+        <p><strong>Language:</strong> {{ deleteEvent.language }}</p>
     </div>
     
   
     <div>
-      <button class="delete" (click)="deleteEvent()">Delete Event</button>
-      <!-- <button class="cancel" (click)="cancel()">Cancel</button> -->
+      <button class="delete" (click)="onDeleteBtnClick(deleteEvent.eventID)">Delete Event</button>
+      <button class="cancel" (click)="HomeBtnClick()">Back to home</button>
     </div>
 </div>
   

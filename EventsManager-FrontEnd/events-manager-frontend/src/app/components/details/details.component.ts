@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { EventService } from '../../event.service';
 import { ActivatedRoute } from '@angular/router';
 import { EventModel } from '../../event.model';
+
+
 
 @Component({
   selector: 'app-details',
@@ -9,9 +11,7 @@ import { EventModel } from '../../event.model';
   styleUrls: ['./details.component.css']
 })
 
-export class DetailsComponent implements OnInit {
-  eventService: EventService;
-  activatedRoute: ActivatedRoute;
+export class DetailsComponent {
   eventDetails: EventModel = {
     eventID: 0,
     eventName: "",
@@ -20,6 +20,10 @@ export class DetailsComponent implements OnInit {
     cost: 0,
     language: ""
   };
+
+
+  eventService: EventService;
+  activatedRoute: ActivatedRoute;
 
   constructor(eventService: EventService, activatedRoute: ActivatedRoute) {
     this.eventService = eventService;

@@ -1,33 +1,33 @@
 import { Injectable, inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { provideHttpClient } from '@angular/common/http';
 import { EventModel } from './event.model';
-import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class EventService {
   private apiUrl = 'https://localhost:7059/api/events'; 
-  httpClient = inject(HttpClient);
+  httpClient = inject(provideHttpClient);
   constructor() {}
 
-  getEvents(): Observable<EventModel[]> {
+  getEvents(){
     return this.httpClient.get<EventModel[]>(`${this.apiUrl}`);
   }
 
-  getEventById(id: number): Observable<EventModel> {
+  getEventById(id: number) {
     return this.httpClient.get<EventModel>(`${this.apiUrl}/${id}`);
   }
 
-  createEvent(event: EventModel): Observable<EventModel> {
+  createEvent(event: EventModel){
     return this.httpClient.post<EventModel>(`${this.apiUrl}`, event);
   }
 
-  updateEvent(id: number, event: EventModel): Observable<EventModel> {
-    return this.httpClient.put<EventModel>(`${this.apiUrl}/${id}`, event);
+  updateEvent(event: EventModel) {
+    return this.httpClient.put<EventModel>(`${this.apiUrl}`, event);
   }
 
-  deleteEvent(id: number): Observable<void> {
-    return this.httpClient.delete<void>(`${this.apiUrl}/${id}`);
+  deleteEvent(id: number) {
+    return this.httpClient.delete(`${this.apiUrl}/${id}`);
   }
 }

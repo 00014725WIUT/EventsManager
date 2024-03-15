@@ -2,14 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { EventService } from '../../event.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EventModel } from '../../event.model';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-edit',
+  standalone: true,
   templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.css']
+  styleUrls: ['./edit.component.css'],
+  imports:[ FormsModule ]
 })
 
-export class UpdateComponent implements OnInit {
+export class UpdateComponent {
   eventService: EventService;
   activatedRoute: ActivatedRoute;
   router: Router;
@@ -39,7 +42,7 @@ export class UpdateComponent implements OnInit {
   }
 
   edit() {
-    this.eventService.updateEvent(this.editEvent.eventID, this.editEvent).subscribe(res => {
+    this.eventService.updateEvent(this.editEvent).subscribe(res => {
       alert("Changes have been updated");
       this.router.navigateByUrl("home");
     });

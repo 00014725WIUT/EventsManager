@@ -24,12 +24,14 @@ export class CreateComponent implements OnInit {
 
   constructor(private eventService: EventService, private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    
+  }
 
   create() {
     this.eventService.createEvent(this.createEvent).subscribe((result) => {
       alert('Event created successfully!');
-      this.router.navigateByUrl('home'); // Navigate to the events listing page
+      this.router.navigateByUrl('home'); 
     });
   }
 }

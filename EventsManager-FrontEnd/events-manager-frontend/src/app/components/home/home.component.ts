@@ -1,21 +1,19 @@
-import { Component, inject } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { MatTableModule } from '@angular/material/table';
+import { Component, inject} from '@angular/core';
 import { EventService } from '../../event.service';
 import { EventModel } from '../../event.model';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatTableModule, MatButtonModule],
+  imports: [CommonModule, MatButtonModule, MatTableModule],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrl: './home.component.css'
 })
-
 export class HomeComponent {
-
   eventService = inject(EventService); 
   ngOnInit() {
 
@@ -23,7 +21,6 @@ export class HomeComponent {
       this.events = result;
     });
   }
-
 
   editClicked(eventId: number) {
     console.log(eventId, "Edit Event");
