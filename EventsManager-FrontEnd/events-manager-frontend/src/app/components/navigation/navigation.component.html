@@ -1,15 +1,20 @@
 <header>
     <title>Events</title>
     <link rel="stylesheet" href="./navigation.component.css">
+    <script src="https://kit.fontawesome.com/7681f02d75.js" crossorigin="anonymous"></script>
 </header>
 
-<mat-toolbar color="primary" class="flex-1">
-    <button mat-icon-button class="example-icon" aria-label="Home" (click)="onHomeIconClicked()">
-      <mat-icon>home</mat-icon>
-    </button>
-    <span>Events Manager</span>
-    <div class="flex justify-center my-4 mx-3">
-      <button mat-raised-button (click)="CreateClicked()">Create Event</button>
-    </div>
-</mat-toolbar>
+<body>
+    <nav class="navbar">
+      <i class="fa-solid fa-house" (click)="onHomeIconClicked()"></i>
+
+      <h1 class="main-title">Event Manager 00014725</h1>
+        
+      <div class="create-btn">
+        <button class="create-button" (click)="CreateClicked()"> Create Event</button>
+      </div>
+    </nav>
+</body>
+
+
   
