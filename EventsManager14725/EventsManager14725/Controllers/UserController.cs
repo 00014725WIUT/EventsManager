@@ -2,11 +2,14 @@
 using Microsoft.AspNetCore.Mvc;
 using EventsManager14725.Models;
 using EventsManager14725.Repositories;
+using System.Collections;
 
 namespace EventsManager14725.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
+
+    // WIUT STUDENT ID: 00014725
 
     public class UserController : ControllerBase
     {
@@ -19,10 +22,10 @@ namespace EventsManager14725.Controllers
 
         // get: 
         [HttpGet]
-        public async Task<IActionResult> GetAllUsers()
+        public async Task<IEnumerable> GetAllUsers()
         {
             var users = await _userRepository.GetAllAsync();
-            return Ok(users);
+            return users;
         }
 
         //gerById
@@ -40,22 +43,17 @@ namespace EventsManager14725.Controllers
 
         // post:
         [HttpPost]
-        public async Task<IActionResult> CreateUser(UserModel userModel)
+        public async Task<IActionResult> CreateUser(UserModel users)
         {
-            await _userRepository.AddAsync(userModel);
-            return CreatedAtAction(nameof(GetUserById), new { id = userModel.UserId }, userModel);
+            await _userRepository.AddAsync(users);
+            return CreatedAtAction(nameof(GetUserById), new { id = users.UserId }, users);
         }
 
         // put: 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, UserModel userModel)
+        public async Task<IActionResult> UpdateUser(UserModel users)
         {
-            if (id != userModel.UserId)
-            {
-                return BadRequest();
-            }
-
-            await _userRepository.UpdateAsync(userModel);
+            await _userRepository.UpdateAsync(users);
             return NoContent();
         }
 
@@ -66,6 +64,5 @@ namespace EventsManager14725.Controllers
             await _userRepository.DeleteAsync(id);
             return NoContent();
         }
-
     }
 }

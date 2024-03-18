@@ -2,12 +2,14 @@
 using Microsoft.AspNetCore.Mvc;
 using EventsManager14725.Models;
 using EventsManager14725.Repositories;
+using System.Collections;
+
 
 namespace EventsManager14725.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
-
+    // WIUT STUDENT ID: 00014725
 
     public class EventController : ControllerBase
     {
@@ -20,43 +22,31 @@ namespace EventsManager14725.Controllers
 
         // get:
         [HttpGet]
-        public async Task<IActionResult> GetAllEvents()
-        {
-            var events = await _eventRepository.GetAllAsync();
-            return Ok(events);
-        }
+        public async Task<IEnumerable> GetAllEvents() => await _eventRepository.GetAllAsync();
+      
 
         // get:
         [HttpGet("{id}")]
         public async Task<IActionResult> GetEventById(int id)
         {
             var eventItem = await _eventRepository.GetByIDAsync(id);
-            if (eventItem == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(eventItem);
+            return eventItem == null ? NotFound() : Ok(eventItem);
+            
         }
 
         // post:
         [HttpPost]
-        public async Task<IActionResult> CreateEvent(EventModel eventModel)
+        public async Task<IActionResult> CreateEvent(EventModel events)
         {
-            await _eventRepository.AddAsync(eventModel);
-            return CreatedAtAction(nameof(GetEventById), new { id = eventModel.EventId }, eventModel);
+            await _eventRepository.AddAsync(events);
+            return Ok(events);
         }
 
         // put: 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateEvent(int id, EventModel eventModel)
+        [HttpPut]
+        public async Task<IActionResult> UpdateEvent(EventModel events)
         {
-            if (id != eventModel.EventId)
-            {
-                return BadRequest();
-            }
-
-            await _eventRepository.UpdateAsync(eventModel);
+            await _eventRepository.UpdateAsync(events);
             return NoContent();
         }
 

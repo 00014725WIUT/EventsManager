@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 
+// WIUT STUDENT ID: 00014725
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -15,28 +17,14 @@ import { MatTableModule } from '@angular/material/table';
 })
 export class HomeComponent {
   eventService = inject(EventService); 
+  router = inject(Router)
+
   ngOnInit() {
 
     this.eventService.getEvents().subscribe((result) => {
       this.events = result;
     });
   }
-
-  editClicked(eventId: number) {
-    console.log(eventId, "Edit Event");
-    this.router.navigateByUrl("/edit/" + eventId);
-  }
-
-  detailsClicked(eventId: number) {
-    console.log(eventId, "View Event Details");
-    this.router.navigateByUrl("/details/" + eventId);
-  }
-
-  deleteClicked(eventId: number) {
-    console.log(eventId, "Delete Event");
-    this.router.navigateByUrl("/delete/" + eventId);
-  }
-  constructor(private router: Router) { }
 
   events: EventModel[] = 
   [
@@ -201,5 +189,22 @@ export class HomeComponent {
       "language": "Multilingual"
     }
   ]
+
   displayedColumns: string[] = ['EventId', 'EventName', 'EventDate', 'Location', 'Cost', 'Language', 'Actions'];
+
+  editClicked(eventId: number) {
+    console.log(eventId, "Edit Event");
+    this.router.navigateByUrl("/edit/" + eventId);
+  }
+
+  detailsClicked(eventId: number) {
+    console.log(eventId, "View Event Details");
+    this.router.navigateByUrl("/details/" + eventId);
+  }
+
+  deleteClicked(eventId: number) {
+    console.log(eventId, "Delete Event");
+    this.router.navigateByUrl("/delete/" + eventId);
+  }
+  
 }

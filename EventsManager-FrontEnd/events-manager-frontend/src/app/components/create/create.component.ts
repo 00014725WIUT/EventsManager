@@ -29,7 +29,7 @@ export class CreateComponent implements OnInit {
   }
 
   create() {
-    this.eventService.createEvent(this.createEvent).subscribe((result) => {
+    this.eventService.createEvent(this.createEvent).subscribe((result: EventModel) => {
       alert('Event created successfully!');
       this.router.navigateByUrl('home'); 
     });

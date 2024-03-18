@@ -2471,8 +2471,7 @@
     ]
   },
   "packageFolders": {
-    "E:\\Users\\00014725\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jolda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2480,15 +2479,11 @@
       "projectUniqueName": "D:\\EventsManager\\EventsManager14725\\EventsManager14725\\EventsManager14725.csproj",
       "projectName": "EventsManager14725",
       "projectPath": "D:\\EventsManager\\EventsManager14725\\EventsManager14725\\EventsManager14725.csproj",
-      "packagesPath": "E:\\Users\\00014725\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\jolda\\.nuget\\packages\\",
       "outputPath": "D:\\EventsManager\\EventsManager14725\\EventsManager14725\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "E:\\Users\\00014725\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\jolda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2496,7 +2491,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2557,7 +2551,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -11,7 +11,7 @@ import { EventModel } from '../../event.model';
   styleUrls: ['./details.component.css']
 })
 
-export class DetailsComponent {
+export class DetailsComponent implements OnInit {
   eventDetails: EventModel = {
     eventID: 0,
     eventName: "",
@@ -31,8 +31,8 @@ export class DetailsComponent {
   }
 
   ngOnInit() {
-    this.eventService.getEventById(this.activatedRoute.snapshot.params["id"]).subscribe(result => {
-      this.eventDetails = result;
+    this.eventService.getEventById(this.activatedRoute.snapshot.params["id"]).subscribe(res => {
+      this.eventDetails = res;
     });
   }
 }

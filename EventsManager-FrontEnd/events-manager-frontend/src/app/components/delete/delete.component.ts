@@ -28,7 +28,7 @@ export class DeleteComponent {
 
   
   ngOnInit() {
-    this.eventService.getEventById(this.activatedRoute.snapshot.params["id"]).subscribe((result) => {
+    this.eventService.getEventById(this.activatedRoute.snapshot.params["id"]).subscribe((result : EventModel) => {
       this.deleteEvent = result
     });
   }
